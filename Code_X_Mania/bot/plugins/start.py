@@ -26,7 +26,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="__𝓢𝓞𝓡𝓡𝓨, 𝓨𝓞𝓤 𝓐𝓡𝓔 𝓐𝓡𝓔 𝓑𝓐𝓝𝓝𝓔𝓓 𝓕𝓡𝓞𝓜 𝓤𝓢𝓘𝓝𝓖 𝓜𝓔. 𝓒ᴏɴᴛᴀᴄᴛ ᴛʜᴇ 𝓓ᴇᴠᴇʟᴏᴘᴇʀ__\n\n @EverythingSuckz **𝙃𝙚 𝙬𝙞𝙡𝙡 𝙝𝙚𝙡𝙥 𝙮𝙤𝙪**",
+                        text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](http://t.me/StreamxtSupport). ",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -34,11 +34,11 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>[̲̅J][̲̅ᴏ][̲̅ɪ][̲̅ɴ]  [̲̅ᴍ][̲̅ʏ]   [̲̅ᴜ][̲̅ᴘ][̲̅ᴅ][̲̅ᴀ][̲̅ᴛ][̲̅ᴇ][̲̅S]  [̲̅ᴄ][̲̅ʜ][̲̅ᴀ][̲̅ɴ][̲̅ɴ][̲̅ᴇ][̲̅ʟ]  [̲̅ᴛ][̲̅ᴏ]  [̲̅ᴜ][̲̅s][̲̅ᴇ]  [̲̅ᴍ][̲̅ᴇ] 🔐</i>",
+                    text="<i>⭕ **Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ!** \n\n Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ! ⭕</i>",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇ 🤖", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ]
                         ]
                     ),
@@ -48,7 +48,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>😞 𝐒𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 𝐖𝐞𝐧𝐭 𝐖𝐫𝐨𝐧𝐠 😞</i> <b> <a href='https://t.me/EverythingSuckz'>CLICK HERE FOR SUPPORT </a></b>",
+                    text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](http://t.me/StreamxtSupport).",
                     parse_mode="HTML",
                     disable_web_page_preview=True)
                 return
@@ -60,8 +60,8 @@ async def start(b, m):
 """,
             parse_mode="HTML",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton(' 👨‍💻 Owner 👨‍💻 ', url=f"https://t.me/{Var.OWNER_USERNAME}"),
-                                                                                       InlineKeyboardButton('❤️ Follow Me ❤️', url='https://github.com/EverythingSuckz') ] ]  ) )
+            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton(' 💠 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 💠 ', url=f"https://t.me/{Var.OWNER_USERNAME}"),
+                                                                                       InlineKeyboardButton('👨‍💻 Developer 👨‍💻', url='https://t.me/AbirHasan2005') ] ]  ) )
                                                                                        
                                                                                        
                                                                             
@@ -72,7 +72,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ ᴄᴏɴᴛᴀᴄᴛ** @EverythingSuckz",
+                        text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](http://t.me/StreamxtSupport).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -80,14 +80,14 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Pʟᴇᴀsᴇ Jᴏɪɴ  Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ**!\n\n**Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ**!",
+                    text="⭕ **Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴛʜɪs Bᴏᴛ!** \n\n Dᴜᴇ ᴛᴏ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs ᴄᴀɴ ᴜsᴇ ᴛʜᴇ Bᴏᴛ! ⭕",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ],
                             [
-                                InlineKeyboardButton("🔄 Refresh / Try Again",
+                                InlineKeyboardButton("🔄 Refresh 🔄",
                                                      url=f"https://t.me/{Var.APP_NAME}.herokuapp.com/{usr_cmd}") # Chnage ur app name
                             ]
                         ]
@@ -98,7 +98,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [Bot Dunia Support](https://t.me/BotDuniaSupport).",
+                    text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](http://t.me/StreamxtSupport).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
