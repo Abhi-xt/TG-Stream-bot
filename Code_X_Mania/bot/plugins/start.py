@@ -121,12 +121,7 @@ async def start(b, m):
         stream_link = Var.URL + 'watch/' + str(log_msg.message_id)
         online_link = Var.URL + 'download/' + str(log_msg.message_id)
 
-        msg_text ="""
-<i><u> ☀️ Yᴏᴜʀ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ ☀️</u></i>\n
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b>`{}`\n
-<b>🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ</b>\n
-"""
-
+        msg_text ="☀️ Yᴏᴜʀ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ ☀️\n\n📂 File Name: {}\n\n 🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ "
         await m.reply_text(
             text=msg_text.format(file_name),
             parse_mode="HTML",
