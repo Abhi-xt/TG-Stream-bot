@@ -53,7 +53,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text=f"**☀️ Yᴏᴜʀ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ ☀️** \n\n **📂 Fɪʟᴇ ɴᴀᴍᴇ :** `{file_name}` \n\n 🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ ",
+            text='☀️ Yᴏᴜʀ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ ☀️\n\n📂 **File Name:** `{}`\n\n 🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ',
             parse_mode="HTML",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton(' 💠 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 💠 ', url=f"https://t.me/{Var.OWNER_USERNAME}"),
