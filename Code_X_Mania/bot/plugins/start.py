@@ -48,17 +48,17 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](http://t.me/StreamxtSupport).",
+                    text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ](http://t.me/streamxtsupportbot).",
                     parse_mode="HTML",
                     disable_web_page_preview=True)
                 return
-        text = f"👋 Hᴇʟʟᴏ {message.from_user.first_name}, \n I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ.\n\n 💠 Sᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ ᴀɴ ɪɴsᴛᴀɴᴛ sᴛʀᴇᴀᴍ ʟɪɴᴋ \n\n🚸 Wᴀʀɴɪɴɢ 🚸 :- 🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n Cʀᴇᴀᴛᴇᴅ ᴡɪᴛʜ ❤️"
-        await m.reply_text(text=text,
+    
+        await m.reply_text(text="👋 Hᴇʟʟᴏ, \n I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ.\n\n 💠 Sᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ ᴀɴ ɪɴsᴛᴀɴᴛ sᴛʀᴇᴀᴍ ʟɪɴᴋ \n\n🚸 Wᴀʀɴɪɴɢ 🚸 :- 🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n Cʀᴇᴀᴛᴇᴅ ᴡɪᴛʜ ❤️",
             parse_mode="HTML",
             disable_web_page_preview=True,
             quote=True,
-            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton(' 💠 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 💠 ', url=f"https://t.me/{Var.OWNER_USERNAME}"),
-                                                                                       InlineKeyboardButton('👨‍💻 Developer 👨‍💻', url='https://t.me/AbirHasan2005') ] ]  ) )
+            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton(' 💠 Admin 💠 ', url=f"https://t.me/{Var.OWNER_USERNAME}"),
+                                                                                       InlineKeyboardButton('👨‍💻 Sᴜᴘᴘᴏʀᴛ 👨‍💻', url='http://t.me/streamxtsupportbot') ] ]  ) )
                                                                                        
                                                                                        
                                                                             
@@ -69,7 +69,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](http://t.me/StreamxtSupport).",
+                        text="𝐒𝐨𝐫𝐫𝐲 𝐒𝐢𝐫, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐁𝐚𝐧𝐧𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐲 [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](http://t.me/StreamxtSupportbot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
