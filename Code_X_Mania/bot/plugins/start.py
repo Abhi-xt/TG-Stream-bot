@@ -53,7 +53,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
     
-        await m.reply_text(text="👋 Hᴇʟʟᴏ, \n I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ.\n\n 💠 Sᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ ᴀɴ ɪɴsᴛᴀɴᴛ sᴛʀᴇᴀᴍ ʟɪɴᴋ \n\n🚸 Wᴀʀɴɪɴɢ 🚸 :- 🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n Cʀᴇᴀᴛᴇᴅ ᴡɪᴛʜ ❤️",
+        await m.reply_text(text="👋 Hᴇʟʟᴏ, I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ.\n\n 💠 Sᴇɴᴅ ᴍᴇ ᴀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ ᴀɴ ɪɴsᴛᴀɴᴛ sᴛʀᴇᴀᴍ ʟɪɴᴋ \n\n🚸 Wᴀʀɴɪɴɢ 🚸 :- 🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n Cʀᴇᴀᴛᴇᴅ ᴡɪᴛʜ ❤️",
             parse_mode="HTML",
             disable_web_page_preview=True,
             quote=True,
