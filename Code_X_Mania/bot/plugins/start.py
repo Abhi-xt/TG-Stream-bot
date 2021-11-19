@@ -171,7 +171,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](http://t.me/StreamxtSupport).",
+                text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ](http://t.me/streamxtsupportbot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -180,9 +180,8 @@ async def help_handler(bot, message):
         parse_mode="HTML",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("👨‍💻 DEVELOPER 👨‍💻", url="https://t.me/AbirHasan2005")],
-                [InlineKeyboardButton("🔅 Support Group 🔅", url="http://t.me/streamxtsupportbot")]
+           [
+                [InlineKeyboardButton("🔅 Hᴇʟᴘ / Rᴇᴘᴏʀᴛ Bᴜɢs 🔅", url="http://t.me/streamxtsupportbot")]
             ]
         )
     )
