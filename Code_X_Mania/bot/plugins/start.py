@@ -171,7 +171,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Sᴇɴᴅ ᴍᴇ ᴀɴʏ Fɪʟᴇ I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ Exᴛᴇʀɴᴀʟ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ!\ɴ\ɴAʟsᴏ I ᴀᴍ Sᴜᴘᴘᴏʀᴛᴇᴅ ɪɴ Cʜᴀɴɴᴇʟs. Aᴅᴅ ᴍᴇ ᴛᴏ Cʜᴀɴɴᴇʟ ᴀs Aᴅᴍɪɴ ᴛᴏ Mᴀᴋᴇ Mᴇ Wᴏʀᴋᴀʙʟᴇ!",
+        text="Sᴇɴᴅ ᴍᴇ ᴀɴʏ Fɪʟᴇ I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ Exᴛᴇʀɴᴀʟ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ!\n\nAʟsᴏ I ᴀᴍ Sᴜᴘᴘᴏʀᴛᴇᴅ ɪɴ Cʜᴀɴɴᴇʟs. Aᴅᴅ ᴍᴇ ᴛᴏ Cʜᴀɴɴᴇʟ ᴀs Aᴅᴍɪɴ ᴛᴏ Mᴀᴋᴇ Mᴇ Wᴏʀᴋᴀʙʟᴇ!",
         parse_mode="HTML",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
