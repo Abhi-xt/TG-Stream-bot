@@ -188,81 +188,57 @@
 
         </style>
     </head>
-    <body>
-        <div id="loading" class="loading">
-            <div class="loading-text">
-                <span class="loading-text-words">B</span>
-                <span class="loading-text-words">Y:</span>
-                <span class="loading-text-words"> - </span><br>
-                <span class="loading-text-words">J</span>
-                <span class="loading-text-words">I</span>
-                <span class="loading-text-words">G</span>
-                <span class="loading-text-words">A</span>
-                <span class="loading-text-words">R</span>
-                <span class="loading-text-words">  </span>
-                <span class="loading-text-words">V</span>
-                <span class="loading-text-words">A</span>
-                <span class="loading-text-words">R</span>
-                <span class="loading-text-words">M</span>
-                <span class="loading-text-words">A</span>
-            </div>
+    <body class='cyber'>
+    <header>
+        <div class="toogle"></div>
+        <div id="file-name" class="cyber">
+            
         </div>
-        <video controls playsinline id="player" style="background-color: #fff;">
-        </video>
-        <div class="logo-container">
-            <a href="https://t.me/Universal_Projects" target="_blank" rel="noopener noreferrer" class="float" id="logo"></a>
-            <div class="label-container">
-                <i class="fa fa-play label-arrow"></i>
-                <div class="label-text">Telegram</div>
-            </div>
-        </div>
-        <script>
-		    setTimeout(videovisible, 5000)
-            function videovisible() {
-                            document.getElementById('loading').style.display = 'none'
-                        }
-			const controls = [
-              'play-large', // The large play button in the center
-              'play', // Play/pause playback
-              'progress', // The progress bar and scrubber for playback and buffering
-              'current-time', // The current time of playback
-              'duration', // The full duration of the media
-              'mute', // Toggle mute
-              'volume', // Volume control
-              'captions', // Toggle captions
-              'settings', // Settings menu
-              'pip', // Picture-in-picture (currently Safari only)
-              'airplay', // Airplay (currently Safari only)
-              'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
-              'fullscreen' // Toggle fullscreen
-               ];
-            var defaultOptions = {
-			    controls,
-                "autoplay": false,
-                "muted": false,
-                "loop": {
-                    "active": false
-                },
-                "captions": {
-                    "active": true,
-                    "update": true
-                }
-            };
-            defaultOptions.tooltips = {controls: true, seek:true};
-            defaultOptions.quality = {
-                            default: "default"
-                        };
-            const player = new Plyr("#player", defaultOptions);
-            player.source = {
-                            type: "video",
-                            title: "{{ file_name }}",
-                            sources: [
-                                                    {
-                                                        src: '{{ online_link }}',
-                                                        size: "default",
-                                                 }
-                                        ],
-            };
-        </script>
-    </body>
+    </header>
+
+    <div class="container">
+        <a href=%s>
+            <button class="cybr-btn">
+                Download
+                <span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">_404 Error</span>
+                <span aria-hidden class="cybr-btn__tag">_%s</span>
+            </button>
+        </a>
+    </div>
+    
+  
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+ <script>
+        const controls = [
+              'play-large',
+              'rewind',
+              'play', 
+              'fast-forward', 
+              'progress', 
+              'current-time',
+              'duration',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'fullscreen'
+            ];
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.player', { controls });
+        });
+
+        const body = document.querySelector('body');
+        const title = document.querySelector('#file-name');
+        const footer = document.querySelector('footer');
+        const toogle = document.querySelector('.toogle');
+        toogle.onclick = () => {
+            body.classList.toggle('dark')
+            footer.classList.toggle('dark')
+            title.classList.toggle('dark')
+        }
+    </script>
+</body>
 </html>
