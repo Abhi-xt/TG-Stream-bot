@@ -49,7 +49,7 @@ async def start(b, m):
                 await b.send_message(
                     chat_id=m.chat.id,
                     text="☹️ Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ ☹️ Cᴏɴᴛᴀᴄᴛ ᴍʏ [Sᴜᴘᴘᴏʀᴛ](http://t.me/streamxtsupportbot).",
-                    parse_mode="HTML",
+                    parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
     
