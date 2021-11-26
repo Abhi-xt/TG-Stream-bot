@@ -1,11 +1,11 @@
-import requests
-import time
-from threading import Thread
+import logging
+import aiohttp
+from Code_X_Mania.vars import Var
 
-def ping_app():
-    while True:
-        requests.get("https://streamxt.herokuapp.com")
-        time.sleep(120)
-
-t = Thread(target=ping_app)
-t.start()
+async def ping_server():
+    try:
+        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=10)) as session:
+            async with session.get(Var.URL) as resp:
+                logging.info("Pinged server with response: {}".format(resp.status))
+    except TimeoutError:
+        logging.warning("Couldn't connect to the site URL..!")
