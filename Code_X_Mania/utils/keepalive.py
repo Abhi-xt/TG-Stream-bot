@@ -1,11 +1,9 @@
 import logging
-import aiohttp
-from Code_X_Mania.vars import Var
-
-async def ping_server():
-    try:
-        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=10)) as session:
-            async with session.get(Var.URL) as resp:
-                logging.info("Pinged server with response: {}".format(resp.status))
-    except TimeoutError:
-        logging.warning("Couldn't connect to the site URL..!")
+import requests
+from ..vars import Var
+def ping_server():
+    k = requests.get(f'https://ping-pong-sn.herokuapp.com/pingback?link={Var.URL}').json()
+    if not k.get('error'):
+        logging.info('KeepAliveService: Pinged {} with status {}'.format(Var.FQDN, k.get('Status')))
+    else:
+        logging.error('Couldn\'t Ping the Server!')
